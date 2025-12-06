@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daily Patient Updates</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#138aec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+              "secondary": "#468966",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d151b] dark:text-slate-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-center whitespace-nowrap border-b border-solid border-slate-200/80 dark:border-slate-800/80 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center justify-between px-4 sm:px-10 py-3 w-full max-w-7xl">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-50">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_535)">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_535"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Dr. Puneet Kumar</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-slate-800 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium leading-normal text-slate-800 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">About</a>
+<a class="text-sm font-medium leading-normal text-slate-800 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">Services</a>
+<a class="text-sm font-bold leading-normal text-primary" href="#">Updates</a>
+<a class="text-sm font-medium leading-normal text-slate-800 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Book Appointment</span>
+</button>
+</div>
+<button class="md:hidden p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined text-slate-800 dark:text-slate-200">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5 sm:py-10 px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col w-full max-w-7xl">
+<div class="flex flex-wrap justify-between gap-4 py-4">
+<div class="flex flex-col gap-3">
+<h1 class="text-slate-900 dark:text-slate-50 text-4xl font-black leading-tight tracking-[-0.033em]">Daily Patient Updates from Dr. Puneet Kumar</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Your source for the latest health tips, clinic news, and insights.</p>
+</div>
+</div>
+<div class="flex gap-3 py-3 flex-wrap pr-4">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary text-white pl-4 pr-4 cursor-pointer">
+<p class="text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 pl-4 pr-4 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Health Tips</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 pl-4 pr-4 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Clinic News</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 pl-4 pr-4 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Videos</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+<div class="lg:col-span-2 flex flex-col gap-6">
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-slate-900 overflow-hidden border border-slate-200 dark:border-slate-800">
+<div class="w-full @xl:w-2/5 h-64 @xl:h-auto bg-center bg-no-repeat bg-cover" data-alt="Illustration of human lungs and airways" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQEGm7MnnGcPGIkpKdlqm6f1VoezplnxLR2a_VvNTDc3aBT8g6sEbg_LkxyRQ59KVCMjjwLuvlrUkP-p8hwiNWrmjuiUrbDL6Ab3z-m0QBzkgTghJlE-s-Uqg0sVlqJFlJPkgKncRWdxCOHt4VJJfSHtjJazBzYMpF3cPMLgM4gbNzqeO4xEr1Ya3jxsIbkSwMuGk8n8Dr55n73H_xs0fJCeQGsZeH_kF0n9h73fGIljgF7ohzXwmW2POFATHtpwe61o0QAIKOdsM");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-secondary text-sm font-bold">Health Tips</p>
+<p class="text-slate-900 dark:text-slate-50 text-xl font-bold leading-tight tracking-[-0.015em]">Understanding Seasonal Allergies</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">
+                                            Learn about the common triggers of seasonal allergies and how you can manage your symptoms effectively this spring.
+                                        </p>
+<div class="flex items-center justify-between mt-3">
+<p class="text-slate-400 dark:text-slate-500 text-sm font-normal leading-normal">April 15, 2024</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-slate-50 text-sm font-medium leading-normal hover:bg-primary/90 transition-colors">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-slate-900 overflow-hidden border border-slate-200 dark:border-slate-800">
+<div class="w-full @xl:w-2/5 h-64 @xl:h-auto bg-center bg-no-repeat bg-cover" data-alt="A colorful assortment of fresh fruits and vegetables on a table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABpcYi7Fckh_lwdM8jW0Qf693vR4-EV7MUjxy7LzC-duAUJQ3nTSMYGuHKdvo5yQB2atS18GmSUysqynsIof9j6R0J1irCLICUI0htLrZIX_A1H1E_GNXSCNiC7-iJlSsEuD_UrEe6lcupSEpcdsw0nf5Jz8LueyuuawUPR2lL66x-guTDeIXF49yHSSdjAsfcp8IJpZPqcdXVdV42DVKZ4xemr3xcGsyNHPbjCIpaJjKVbFiyctqWzAwFPK7nDQnwrUFuNcZ4zrU");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-secondary text-sm font-bold">Health Tips</p>
+<p class="text-slate-900 dark:text-slate-50 text-xl font-bold leading-tight tracking-[-0.015em]">The Benefits of a Balanced Diet</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">
+                                            Discover how a balanced diet can boost your immune system, improve your energy levels, and contribute to your overall well-being.
+                                        </p>
+<div class="flex items-center justify-between mt-3">
+<p class="text-slate-400 dark:text-slate-500 text-sm font-normal leading-normal">April 12, 2024</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-slate-50 text-sm font-medium leading-normal hover:bg-primary/90 transition-colors">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="@container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-sm bg-white dark:bg-slate-900 overflow-hidden border border-slate-200 dark:border-slate-800">
+<div class="w-full @xl:w-2/5 h-64 @xl:h-auto bg-center bg-no-repeat bg-cover" data-alt="A modern, clean clinic waiting room with comfortable chairs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMoLRR2L5YtcWA8jlaZdbrzGROj3yihqF4dNLWN8tv-X-n-gzIeYuDGz5cdHL3zstSMomQk2i9r9_q8Jp2KDJB66lvWi3DEsgPbSHY9c1YtGyWy5w3OCTX0OoI-7pylqbuGugFfHL7vHrW3Km41oWvlg4b9xWwBSClwLoh_S_AzfkOss9M0O3ugjNKOBcuIPEaQPsI97FinrHpCwpHNguWkt3iR0jGbDUEMRrI7MRA76_ViS8OefOT6gOz9F80qiGAhmaJLSKRJkY");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-6">
+<p class="text-secondary text-sm font-bold">Clinic News</p>
+<p class="text-slate-900 dark:text-slate-50 text-xl font-bold leading-tight tracking-[-0.015em]">We've Updated Our Clinic Hours</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">
+                                            To better serve our community, we're excited to announce our new extended hours starting next month.
+                                        </p>
+<div class="flex items-center justify-between mt-3">
+<p class="text-slate-400 dark:text-slate-500 text-sm font-normal leading-normal">April 10, 2024</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-slate-50 text-sm font-medium leading-normal hover:bg-primary/90 transition-colors">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 pt-6">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-xl">chevron_left</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary text-slate-50 text-base font-bold">1</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">2</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">3</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-xl">chevron_right</span>
+</button>
+</div>
+</div>
+<aside class="lg:col-span-1 flex flex-col gap-8">
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-900 p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-50">Featured Video</h3>
+<div class="relative aspect-video w-full rounded-lg overflow-hidden group">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="A doctor speaking to the camera in a professional office setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACL7c_CglxhMhT7WbkgRqIbeAHKQRSrQEjjXwBUKzMjjHmA6HLbk5FM7nVXTuBkmS4N_VKctqDGH81wtE0q97c0UpSCPriQoIjQEn9q078BWnLbWech3lHJkr-lJZm3UkaZQWzO1F0AT3n2xzggJ0HF3KRNd5jYO8pZ8fGhdF3shZ8SUGYhjmYr3OmhQxYRA4sUZ3mAr1WeGg-K9_8yAVEnsP23pj5M-ZwsQxfaOvnhSI0tPXngI9qnkqnViAUqOgPj44GRB62iok");'></div>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center cursor-pointer group-hover:bg-white/50 transition-colors">
+<span class="material-symbols-outlined text-4xl text-white" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<p class="text-base font-semibold text-slate-800 dark:text-slate-200">This Week's Health Tip: Staying Hydrated</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Dr. Kumar shares simple tips to ensure you're drinking enough water throughout the day for optimal health.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-secondary p-6 shadow-sm">
+<h3 class="text-lg font-bold text-white">Download Our Health Guide</h3>
+<p class="text-sm text-white/90">Get your free guide to a healthier lifestyle, packed with tips on diet, exercise, and mental well-being.</p>
+<button class="mt-2 flex items-center justify-center rounded-lg h-10 px-4 bg-white text-secondary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/90 transition-colors">
+<span class="truncate">Download Now</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-slate-100 dark:bg-slate-900 p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-50">Need a Check-up?</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Regular check-ups are key to maintaining good health. Schedule your next appointment with us today.</p>
+<button class="mt-2 flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Book an Appointment</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

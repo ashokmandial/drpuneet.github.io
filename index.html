@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Puneet Kumar - Consultant Physician</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2596be",
+            "background-light": "#f0f7fa",
+            "background-dark": "#0a192f",
+            "text-light": "#1e293b",
+            "text-dark": "#e2e8f0",
+            "card-light": "#ffffff",
+            "card-dark": "#1e293b",
+            "accent-green": "#4d9d49",
+            "subtle-light": "#e2e8f0",
+            "subtle-dark": "#334155"
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="min-h-screen flex flex-col">
+<header class="bg-card-light dark:bg-card-dark shadow-sm">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a class="text-xl font-bold text-primary" href="#">Dr. Puneet Kumar</a>
+<div class="hidden md:flex items-center space-x-6">
+<a class="font-semibold text-primary dark:text-primary transition-colors" href="/index.html">Home</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/about.html">About</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/services.html">Services</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/updates.html">Updates</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/contact.html">Contact</a>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="flex-grow">
+<section class="bg-gradient-to-br from-primary to-cyan-400 text-white relative">
+<div class="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 text-center md:text-left">
+<h1 class="text-4xl md:text-6xl font-bold leading-tight">Dr. Puneet Kumar</h1>
+<p class="text-xl md:text-2xl mt-2 font-light text-cyan-100">Consultant Physician</p>
+<p class="mt-6 max-w-xl mx-auto md:mx-0 text-cyan-200">Dedicated to providing comprehensive and compassionate care with a focus on diabetes management and overall well-being.</p>
+<div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+<a class="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105" href="#appointment">Book Appointment</a>
+<a class="inline-block bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white/20 transition-colors" href="#commitments">Learn More</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<div class="relative">
+<img alt="Portrait of Dr. Puneet Kumar" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-8 border-white/50 shadow-2xl" src="img/DrPuneetKumar.jpg"/>
+<div class="absolute -bottom-4 -right-4 bg-accent-green p-3 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-white text-3xl">health_and_safety</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 md:py-28 bg-background-light dark:bg-background-dark" id="commitments">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">My Professional Commitments</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">My practice is founded on a pledge to patient health, ensuring a holistic approach to medical care and well-being.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-accent-green text-3xl mr-4">check_circle</span>
+<h3 class="text-xl font-semibold">Balanced Healthy Diet</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Guiding patients towards nutritional choices that support a healthy and vibrant life.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-accent-green text-3xl mr-4">check_circle</span>
+<h3 class="text-xl font-semibold">Regular Physical Activity</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Promoting active lifestyles to enhance physical and mental well-being.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-accent-green text-3xl mr-4">check_circle</span>
+<h3 class="text-xl font-semibold">Consistent Blood Sugar Monitoring</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Emphasizing the importance of monitoring for proactive diabetes management.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-accent-green text-3xl mr-4">check_circle</span>
+<h3 class="text-xl font-semibold">Regular Medical Consultations</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Building strong doctor-patient relationships through consistent and open communication.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-accent-green text-3xl mr-4">check_circle</span>
+<h3 class="text-xl font-semibold">Prescribed Medication Adherence</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Ensuring patients understand and follow their treatment plans for optimal outcomes.</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-accent-green text-3xl mr-4">check_circle</span>
+<h3 class="text-xl font-semibold">Patient Education &amp; Empowerment</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Equipping patients with the knowledge to take an active role in their own health journey.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-card-dark text-gray-300">
+<div class="container mx-auto px-6 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p>© 2024 Dr. Puneet Kumar. All Rights Reserved.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
