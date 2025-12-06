@@ -50,32 +50,12 @@
       font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
   </style>
+  <script src="js/layout.js" defer></script>
 </head>
 
 <body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
   <div class="min-h-screen flex flex-col">
-    <header class="bg-card-light dark:bg-card-dark shadow-sm">
-      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a class="text-xl font-bold text-primary flex items-center gap-2" href="#">
-          <span class="material-symbols-outlined">medical_services</span>
-          Dr. Puneet Kumar
-        </a>
-        <div class="hidden md:flex items-center space-x-6">
-          <a class="font-semibold text-primary dark:text-primary transition-colors" href="/index.html">Home</a>
-          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-            href="/about.html">About</a>
-          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-            href="/services.html">Services</a>
-          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-            href="/updates.html">Updates</a>
-          <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-            href="/contact.html">Contact</a>
-        </div>
-        <button class="md:hidden">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </nav>
-    </header>
+    <app-header></app-header>
     <main class="flex-grow">
       <section class="bg-gradient-to-br from-primary to-cyan-400 text-white relative">
         <div class="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12">
@@ -174,17 +154,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-card-dark text-gray-300">
-      <div class="container mx-auto px-6 py-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <p>© 2024 Dr. Puneet Kumar. All Rights Reserved.</p>
-          <div class="flex space-x-4 mt-4 md:mt-0">
-            <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-            <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <app-footer></app-footer>
   </div>
 </body>
 
